@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html ng-app=""><!--this brings angular functionality for the page-->
+<head>
+</head>
+<body>
+
+<div ng-init="names=['lily','bethel','amy']">
+
+	<h3>Looping</h3>
+	<ul>
+		<li ng-repeat="personName in names"{{ personName }}</li>
+	</ul>
+
+Name:
+<br />
+<input type = "text" ng-model="name"/> {{ name}}
+
+
+
+</div>
+<script src="angular.min.js"></script>
+<!--<script src="app.js"></script>-->
+</body>
+</html>
